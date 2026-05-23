@@ -4251,9 +4251,36 @@ const COURSES = [
 
   // ── 경기도 미수록 추가분 (조사 보완) ─────────────────────────
   // 용인시
-  { id: 394, name: '세현CC', region: '경기도', city: '경기 용인시 처인구 이동읍', type: 'member', holes: 18, par: 72, weekday: null, weekend: null, access: [], features: [], pros: [], cons: [], score: 0, highlight: false, stub: true },
-  { id: 395, name: '해솔리아CC', region: '경기도', city: '경기 용인시 처인구 이동면', type: 'member', holes: 27, par: 108, weekday: null, weekend: null, access: [], features: [], pros: [], cons: [], score: 0, highlight: false, stub: true },
-  { id: 396, name: '골드CC', region: '경기도', city: '경기 용인시 기흥구', type: 'public', holes: 36, par: 144, weekday: null, weekend: null, access: [], features: [], pros: [], cons: [], score: 0, highlight: false, stub: true },
+  {
+    id: 394, name: '세현CC', region: '경기도', city: '경기 용인시 처인구 이동읍',
+    type: 'member', holes: 18, par: 72,
+    weekday: null, weekend: null,
+    access: ['서울 강남에서 차로 약 60분', '경부고속도로 오산IC 또는 45번 국도 이용', '이동읍 백자로 450'],
+    features: ['LAKE Course + VALLEY Course 2코스 18홀', '데이비드 데일(David M. Dale) 설계', '2020년 개장 신규 코스', '호수와 계곡 지형 활용'],
+    pros: ['2020년 개장 최신 코스', '호수·계곡 조합으로 다양한 홀 경험', '용인 이동읍 청정 자연 환경', '코스 관리 우수'],
+    cons: ['회원제 전용 운영', '비회원 그린피 미공개', '서울에서 60분 이상 소요', '대중교통 불편'],
+    score: 78, highlight: false, membershipPrice: 180000000
+  },
+  {
+    id: 395, name: '해솔리아CC', region: '경기도', city: '경기 용인시 처인구 이동면',
+    type: 'member', holes: 27, par: 108,
+    weekday: null, weekend: null,
+    access: ['서울 강남에서 차로 약 65분', '경부고속도로 이용 후 45번 국도', '이동면 백자로 297번길 74', '문의 031-321-7755'],
+    features: ['9홀 3코스 구성 총 27홀', '자연 지형 그대로 살린 힐링 코스', '산악 지형 고난이도 설계', '사계절 아름다운 경관'],
+    pros: ['27홀로 다양한 코스 선택', '자연 친화적 산악 코스 경험', '인적 드문 조용한 환경', '코스 난이도 높아 실력 향상에 유리'],
+    cons: ['회원제 전용 운영', '비회원 예약 사실상 불가', '서울에서 65분 이상 소요', '대중교통 이용 불가'],
+    score: 76, highlight: false, membershipPrice: 150000000
+  },
+  {
+    id: 396, name: '골드CC', region: '경기도', city: '경기 용인시 기흥구 고매동',
+    type: 'public', holes: 36, par: 144,
+    weekday: 190000, weekend: 260000,
+    access: ['서울 강남에서 차로 약 30분', '경부고속도로 기흥IC 하차', '기흥단지로 398', '수도권 최고 접근성'],
+    features: ['CHAMPION·MASTER 코스 36홀', '야간 라운딩 가능 (MASTER 코스)', '무봉산 자락 계곡·연못 자연 코스', '회원·비회원 모두 예약 가능'],
+    pros: ['강남에서 30분 수도권 최단 거리', '36홀 + 야간 라운딩 가능', '자연 지형 살린 개성 있는 코스', '회원권 시세 부담 낮은 편(9,000만원대)'],
+    cons: ['비회원 그린피 다소 높음 (주말 26만원)', '회원·비회원 요금 차이 큼', '주말·야간 예약 경쟁 치열', '기흥 일대 교통 혼잡'],
+    score: 80, highlight: false, membershipPrice: 90000000
+  },
   { id: 397, name: '88CC', region: '경기도', city: '경기 용인시 기흥구', type: 'public', holes: 36, par: 144, weekday: null, weekend: null, access: [], features: [], pros: [], cons: [], score: 0, highlight: false, stub: true },
   { id: 398, name: '한원CC', region: '경기도', city: '경기 용인시 처인구 남사면', type: 'public', holes: 27, par: 108, weekday: null, weekend: null, access: [], features: [], pros: [], cons: [], score: 0, highlight: false, stub: true },
   { id: 399, name: '은화삼CC', region: '경기도', city: '경기 용인시 처인구', type: 'member', holes: 18, par: 72, weekday: null, weekend: null, access: [], features: [], pros: [], cons: [], score: 0, highlight: false, stub: true },
@@ -4328,7 +4355,7 @@ const REGIONS = ['전체', '수도권', '경기도', '강원도', '충청도', '
 
 const REGION_DATA = {
   '수도권': { emoji: '🏙️', weekdayAvg: 165000, weekendAvg: 207000, count: 3, desc: '서울·인천 인접 (전국 151개 / DB 3개 수록)' },
-  '경기도': { emoji: '🌿', weekdayAvg: 183000, weekendAvg: 235000, count: 75, desc: '전국 최다 골프장 (172개 / 용인 29개 최다 / 상세 75개+미수록 111개)' },
+  '경기도': { emoji: '🌿', weekdayAvg: 183000, weekendAvg: 235000, count: 78, desc: '전국 최다 골프장 (172개 / 용인 29개 최다 / 상세 78개+미수록 108개)' },
   '강원도': { emoji: '⛰️', weekdayAvg: 183000, weekendAvg: 232000, count: 30, desc: '산악·자연·리조트 코스 (전국 56개 / DB 30개 수록)' },
   '충청도': { emoji: '🌾', weekdayAvg: 143000, weekendAvg: 185000, count: 34, desc: '수도권 대체지 (전국 75개 / 음성 집중 / DB 34개 수록)' },
   '경상도': { emoji: '🏖️', weekdayAvg: 138000, weekendAvg: 179000, count: 83, desc: '부산·대구·남해 (전국 114개 / DB 83개 수록)' },
