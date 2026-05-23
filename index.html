@@ -1170,11 +1170,11 @@ const COURSES = [
   {
     id: 23, name: '천룡CC', region: '충청도', city: '충북 진천군',
     type: 'member', holes: 27, par: 108,
-    weekday: null, weekend: null,
+    weekday: 190000, weekend: 250000,
     access: ['서울에서 차로 80~90분', '중부고속도로 이용', '진천IC 하차'],
-    features: ['언듈레이션 강한 코스', '빠른 그린스피드', '회원제'],
-    pros: ['전략적인 코스 설계', '빠른 그린으로 기술 향상'],
-    cons: ['회원 전용', '가파른 언듈레이션으로 초보자 불리'],
+    features: ['황룡·청룡·흑룡 27홀', '언듈레이션 강한 코스', '빠른 그린스피드', '비회원 이용 가능'],
+    pros: ['전략적인 코스 설계', '빠른 그린으로 기술 향상', '별도 9홀 퍼블릭도 운영'],
+    cons: ['가파른 언듈레이션으로 초보자 불리', '비회원 그린피 높음'],
     score: 83, highlight: false
   },
   {
@@ -2212,22 +2212,22 @@ const COURSES = [
   // ── 경기도 추가 (광주·양평·하남·화성·평택권) ──
   {
     id: 126, name: '곤지암GC', region: '경기도', city: '경기 광주시 곤지암',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
+    type: 'public', holes: 18, par: 72,
+    weekday: 240000, weekend: 280000,
     access: ['서울 강남에서 차로 45분', '중부고속도로 이용', '곤지암IC 하차'],
-    features: ['회원제 명문', '한국 10대 코스 수상', '전략적 설계'],
-    pros: ['명문 코스 경험', '서울 강남 접근성 우수', '뛰어난 잔디 관리'],
-    cons: ['회원 전용', '비회원 이용 불가에 가까움'],
+    features: ['비회원 퍼블릭 운영', '한국 10대 코스 수상', '전략적 설계'],
+    pros: ['명문 코스를 퍼블릭으로 이용 가능', '서울 강남 접근성 우수', '뛰어난 잔디 관리'],
+    cons: ['그린피 비교적 높음', '주말 예약 경쟁 치열'],
     score: 91, highlight: true
   },
   {
     id: 127, name: '이스트밸리CC', region: '경기도', city: '경기 광주시',
     type: 'member', holes: 27, par: 108,
-    weekday: null, weekend: null,
+    weekday: 240000, weekend: 290000,
     access: ['서울 강남에서 차로 45분', '중부고속도로 이용', '곤지암IC 하차'],
     features: ['27홀 회원제', '수도권 남부 명문', '빠른 그린'],
     pros: ['서울 강남 접근성', '27홀 다양성', '수준 높은 코스 관리'],
-    cons: ['회원 전용', '비회원 예약 어려움'],
+    cons: ['회원 전용', '비회원 그린피 높음', '주말 예약 어려움'],
     score: 87, highlight: false
   },
   {
@@ -2508,12 +2508,12 @@ const COURSES = [
   // ── 경상도 추가 ──
   {
     id: 155, name: '통도파인이스트CC', region: '경상도', city: '경남 양산시',
-    type: 'member', holes: 36, par: 144,
+    type: 'public', holes: 36, par: 144,
     weekday: null, weekend: null,
     access: ['부산에서 차로 30분', '경부고속도로 이용', '통도사 인근'],
-    features: ['통도사 인근 명문', '36홀 대규모', '부산·울산 인기 명문'],
+    features: ['통도사 인근 명문', '36홀 대규모', '비회원 예약 가능(13일 전부터)'],
     pros: ['부산·경남 최고 명문급', '통도사 관광 연계', '36홀 다양성'],
-    cons: ['회원 전용', '수도권에서 매우 멂'],
+    cons: ['수도권에서 매우 멂', '그린피 현장 확인 필요'],
     score: 89, highlight: true
   },
   {
@@ -2652,12 +2652,12 @@ const COURSES = [
   // ── 경상도 추가 ──────────────────────────────────────────────
   {
     id: 169, name: '동부산CC', region: '경상도', city: '부산 기장군',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
+    type: 'public', holes: 27, par: 108,
+    weekday: 178000, weekend: 228000,
     access: ['부산 도심에서 차로 30분', '기장군 위치', '동해고속도로 이용'],
-    features: ['해안 전망 코스', '명문 회원제', '부산 동부 대표 코스'],
+    features: ['해안 전망 코스', '27홀 비회원 운영', '부산 동부 대표 코스'],
     pros: ['아름다운 해안 경관', '쾌적한 코스 관리', '부산 접근 용이'],
-    cons: ['회원권 필요', '비회원 그린피 비쌈', '주말 예약 경쟁'],
+    cons: ['비회원 그린피 높음', '주말 예약 경쟁 치열', '대중교통 불편'],
     score: 82, highlight: false, membershipPrice: 280000000
   },
   {
@@ -2682,12 +2682,12 @@ const COURSES = [
   },
   {
     id: 172, name: '부산CC', region: '경상도', city: '부산 금정구',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
+    type: 'public', holes: 18, par: 72,
+    weekday: 184500, weekend: 214500,
     access: ['부산 도심에서 차로 25분', '금정산 인근', '도시 접근성 좋음'],
-    features: ['부산 최고급 회원제', '금정산 자락', '역사 깊은 명문'],
+    features: ['부산 최고급 코스', '금정산 자락', '비회원 퍼블릭 운영'],
     pros: ['전통 있는 명문 코스', '코스 품질 최상급', '부산 도심 접근'],
-    cons: ['회원권 매우 비쌈', '비회원 라운드 불가', '예약 매우 어려움'],
+    cons: ['그린피 높은 편', '예약 경쟁 치열', '회원 우선 배정'],
     score: 88, highlight: true, membershipPrice: 350000000
   },
   {
@@ -2722,12 +2722,12 @@ const COURSES = [
   },
   {
     id: 176, name: '경주신라CC', region: '경상도', city: '경북 경주시',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
+    type: 'public', holes: 18, par: 72,
+    weekday: 150000, weekend: 180000,
     access: ['경주 시내에서 차로 15분', '경주 관광 연계'],
-    features: ['신라 문화권 입지', '명문 회원제', '경주 역사 명소 인근'],
+    features: ['신라 문화권 입지', '비회원 이용 가능', '경주 역사 명소 인근'],
     pros: ['역사 문화 도시 경주', '코스 품질 우수', '관광 연계 용이'],
-    cons: ['회원권 필요', '비회원 입장 제한', '수도권에서 멂'],
+    cons: ['수도권에서 멂', '회원 우선 배정', '주말 예약 경쟁'],
     score: 80, highlight: false, membershipPrice: 150000000
   },
   {
@@ -2782,12 +2782,12 @@ const COURSES = [
   },
   {
     id: 182, name: '창원CC', region: '경상도', city: '경남 창원시',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
+    type: 'public', holes: 18, par: 72,
+    weekday: 155000, weekend: 185000,
     access: ['창원 도심에서 차로 20분', '남해고속도로 이용'],
-    features: ['창원 대표 회원제', '경남도청 소재지 인근', '역사 있는 코스'],
-    pros: ['창원 접근성 좋음', '코스 품질 안정적', '명문 회원제'],
-    cons: ['회원권 필요', '비회원 입장 어려움', '주차 혼잡'],
+    features: ['창원 대표 코스', '비회원 퍼블릭 운영', '역사 있는 코스'],
+    pros: ['창원 접근성 좋음', '코스 품질 안정적', '합리적 그린피'],
+    cons: ['회원 우선 배정', '주말 예약 경쟁', '주차 혼잡'],
     score: 74, highlight: false, membershipPrice: 100000000
   },
   {
@@ -2872,12 +2872,12 @@ const COURSES = [
   },
   {
     id: 191, name: '양산동원로얄CC', region: '경상도', city: '경남 양산시',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
+    type: 'public', holes: 18, par: 72,
+    weekday: 90000, weekend: 125000,
     access: ['양산에서 차로 20분', '경부고속도로 이용'],
-    features: ['동원그룹 계열 회원제', '양산 명문 코스', '자연 경관'],
-    pros: ['코스 품질 우수', '쾌적한 환경', '동원 그룹 서비스'],
-    cons: ['회원권 필요', '비회원 입장 어려움', '수도권에서 멂'],
+    features: ['동원그룹 계열', '비회원 예약 명시 허용', '자연 경관'],
+    pros: ['코스 품질 우수', '합리적 그린피', '동원 그룹 서비스'],
+    cons: ['수도권에서 멂', '주말 예약 경쟁', '대중교통 불편'],
     score: 76, highlight: false, membershipPrice: 130000000
   },
   {
@@ -3012,12 +3012,12 @@ const COURSES = [
   },
   {
     id: 205, name: '울산CC', region: '경상도', city: '울산 울주군',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
+    type: 'public', holes: 18, par: 72,
+    weekday: 155000, weekend: 189000,
     access: ['울산 도심에서 차로 25분', '울주군 산악 지역'],
-    features: ['울산 대표 회원제', '영남알프스 인근', '역사 있는 코스'],
+    features: ['울산 대표 명문 코스', '영남알프스 인근', '비회원 이용 가능'],
     pros: ['울산 명문 코스', '코스 품질 우수', '쾌적한 환경'],
-    cons: ['회원권 필요', '비회원 입장 어려움', '수도권에서 멂'],
+    cons: ['수도권에서 멂', '회원 우선 배정', '그린피 다소 높음'],
     score: 76, highlight: false, membershipPrice: 120000000
   },
   {
@@ -3453,14 +3453,14 @@ const COURSES = [
     score: 57, highlight: false
   },
   {
-    id: 249, name: '순천CC', region: '전라도', city: '전남 순천시',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
+    id: 249, name: '순천CC', region: '전라도', city: '전남 순천시 별량면',
+    type: 'public', holes: 18, par: 72,
+    weekday: 70000, weekend: 85000,
     access: ['순천 도심에서 차로 20분', '남해고속도로 이용'],
-    features: ['순천 지역 회원제', '역사 있는 코스', '지역 명문'],
-    pros: ['순천 지역 명문', '코스 품질 양호', '쾌적한 환경'],
-    cons: ['회원권 필요', '비회원 입장 제한', '수도권에서 멂'],
-    score: 68, highlight: false, membershipPrice: 60000000
+    features: ['대중제 퍼블릭', '노캐디제 운영', '야간 라운딩 가능'],
+    pros: ['저렴한 그린피', '노캐디로 경제적', '이용 5회 시 50% 할인권'],
+    cons: ['수도권에서 멂', '코스 수준 평범'],
+    score: 68, highlight: false
   },
   {
     id: 250, name: '보성CC', region: '전라도', city: '전남 보성군',
@@ -3715,13 +3715,13 @@ const COURSES = [
     score: 74, highlight: false
   },
   {
-    id: 275, name: '남촌CC', region: '경기도', city: '경기 이천시',
+    id: 275, name: '남촌CC', region: '경기도', city: '경기 광주시 곤지암읍',
     type: 'member', holes: 18, par: 72,
     weekday: null, weekend: null,
-    access: ['서울에서 차로 70분', '이천 도자기 관광 연계', '영동고속도로 이용'],
-    features: ['이천 명문 회원제', '도자기 관광 연계', '구릉지 코스'],
-    pros: ['코스 품질 우수', '이천 도자기 관광', '쾌적한 환경'],
-    cons: ['회원권 필요', '비회원 입장 어려움', '비용 높음'],
+    access: ['서울에서 차로 55분', '중부고속도로 이용', '곤지암IC 하차'],
+    features: ['광주 곤지암 명문 회원제', '구릉지 코스'],
+    pros: ['코스 품질 우수', '수도권 접근 편리', '쾌적한 환경'],
+    cons: ['회원권 필요', '비회원 입장 사실상 불가', '비용 높음'],
     score: 78, highlight: false, membershipPrice: 200000000
   },
   {
@@ -3775,13 +3775,13 @@ const COURSES = [
     score: 82, highlight: false, membershipPrice: 320000000
   },
   {
-    id: 281, name: '수원CC', region: '경기도', city: '경기 수원시',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
-    access: ['서울에서 차로 35분', '경부고속도로 수원IC', '수원역 버스 이용'],
-    features: ['수원 명문 회원제', '수원화성 관광 연계', '역사 있는 클럽'],
-    pros: ['수원 역사 관광', '서울 접근 편리', '명문 코스 품질'],
-    cons: ['회원권 필요', '비회원 불가', '시설 다소 노후'],
+    id: 281, name: '수원CC', region: '경기도', city: '경기 용인시 기흥구',
+    type: 'public', holes: 18, par: 72,
+    weekday: 190000, weekend: 240000,
+    access: ['서울에서 차로 40분', '경부고속도로 기흥IC', '용인 기흥구'],
+    features: ['비회원 퍼블릭 운영', '명문 코스 품질', '역사 있는 클럽'],
+    pros: ['서울 접근 편리', '명문 코스 품질', '비회원도 이용 가능'],
+    cons: ['그린피 높음', '주말 예약 경쟁', '카트·캐디비 별도'],
     score: 76, highlight: false, membershipPrice: 230000000
   },
   {
@@ -3992,12 +3992,12 @@ const COURSES = [
   },
   {
     id: 303, name: '코리아CC', region: '경기도', city: '경기 용인시',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
+    type: 'public', holes: 27, par: 108,
+    weekday: 200000, weekend: 270000,
     access: ['서울에서 차로 50분', '경부고속도로 이용'],
-    features: ['용인 명문 회원제', '전통 코스', '수도권 클럽'],
-    pros: ['명문 코스 품질', '수도권 접근', '전통 있는 클럽'],
-    cons: ['회원권 필요', '비회원 불가', '비용 높음'],
+    features: ['용인 명문 코스', '27홀 비회원 운영', '수도권 클럽'],
+    pros: ['명문 코스 품질', '수도권 접근', '27홀 다양성'],
+    cons: ['그린피 비교적 높음', '주말 예약 경쟁', '비용 높음'],
     score: 80, highlight: false, membershipPrice: 220000000
   },
   {
@@ -4061,23 +4061,23 @@ const COURSES = [
     score: 76, highlight: false
   },
   {
-    id: 311, name: '캐슬파인GC', region: '경기도', city: '경기 파주시',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
-    access: ['서울에서 차로 50분', '자유로 파주IC'],
-    features: ['파주 명문 회원제', '수도권 북부 대표', '역사 있는 코스'],
-    pros: ['수도권 북부 명문', '코스 품질 우수', '조용한 환경'],
-    cons: ['회원권 필요', '비회원 불가', '비용 높음'],
+    id: 311, name: '캐슬파인GC', region: '경기도', city: '경기 여주시 강천면',
+    type: 'public', holes: 18, par: 72,
+    weekday: 105000, weekend: 160000,
+    access: ['서울에서 차로 80분', '영동고속도로 여주IC', '4인 플레이 필수'],
+    features: ['2015년 퍼블릭 전환', '시즌별 가격 변동', '역사 있는 코스'],
+    pros: ['명문 코스를 합리적 가격에', '코스 품질 우수', '조용한 환경'],
+    cons: ['4인 플레이 필수', '서울에서 다소 멂', '시즌별 가격 상이'],
     score: 80, highlight: false, membershipPrice: 240000000
   },
   {
-    id: 312, name: '한국CC', region: '경기도', city: '경기 파주시',
-    type: 'member', holes: 18, par: 72,
+    id: 312, name: '원더클럽 파주CC', region: '경기도', city: '경기 파주시 법원읍',
+    type: 'public', holes: 18, par: 72,
     weekday: null, weekend: null,
     access: ['서울에서 차로 55분', 'DMZ 인근', '자유로 이용'],
-    features: ['파주 역사 있는 회원제', 'DMZ 인근', '전통 코스'],
-    pros: ['전통 있는 명문 클럽', '코스 품질 우수', '수도권 북부'],
-    cons: ['회원권 필요', '비회원 입장 어려움', '다소 노후된 시설'],
+    features: ['구 한국CC, 현 원더클럽 파주CC', '비회원 이용 가능', '월별 요금 변동'],
+    pros: ['전통 있는 코스', '비회원 이용 가능', '수도권 북부'],
+    cons: ['월별 가격 변동 큼', '인터넷 예약 확인 필요', '다소 노후된 시설'],
     score: 76, highlight: false, membershipPrice: 180000000
   },
   {
@@ -4091,13 +4091,13 @@ const COURSES = [
     score: 85, highlight: false, membershipPrice: 250000000
   },
   {
-    id: 314, name: '남서울CC', region: '경기도', city: '경기 안성시',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
-    access: ['서울에서 차로 75분', '경부고속도로 이용'],
-    features: ['안성 명문 회원제', '수도권 남부 대표', '전통 코스'],
-    pros: ['전통 있는 명문', '코스 품질 안정적', '수도권 남부'],
-    cons: ['회원권 필요', '비회원 불가', '서울에서 다소 멂'],
+    id: 314, name: '남서울CC', region: '경기도', city: '경기 성남시 분당구',
+    type: 'public', holes: 18, par: 72,
+    weekday: 270000, weekend: 320000,
+    access: ['서울 강남에서 차로 25분', '경부고속도로 이용', '전화예약만 가능(031-709-6000)'],
+    features: ['성남 분당 명문 코스', '전화·팩스 예약만 가능', '비회원 잔여 티타임 선착순'],
+    pros: ['강남 접근 최단거리', '명문 코스 품질', '서울 인접'],
+    cons: ['인터넷 예약 불가', '그린피 매우 높음', '카트·캐디비 별도'],
     score: 78, highlight: false, membershipPrice: 200000000
   },
   {
@@ -4161,13 +4161,13 @@ const COURSES = [
     score: 78, highlight: false
   },
   {
-    id: 324, name: '광릉CC', region: '경기도', city: '경기 남양주시',
-    type: 'member', holes: 18, par: 72,
-    weekday: null, weekend: null,
-    access: ['서울에서 차로 45분', '광릉수목원 인근', '북부간선도로 이용'],
-    features: ['광릉수목원 인근 명문', '역사 있는 회원제', '수도권 북동부'],
-    pros: ['수도권 접근 편리', '광릉수목원 관광', '전통 있는 클럽'],
-    cons: ['회원권 필요', '비회원 입장 어려움', '노후화된 시설 일부'],
+    id: 324, name: '한림광릉CC', region: '경기도', city: '경기 남양주시 진접읍',
+    type: 'public', holes: 18, par: 72,
+    weekday: 80000, weekend: 100000,
+    access: ['서울에서 차로 45분', '광릉수목원 인근', '북부간선도로 이용', '전화예약(031-528-7400)'],
+    features: ['회원제·퍼블릭 코스 분리 운영', '노캐디제', '광릉수목원 인근'],
+    pros: ['저렴한 그린피', '노캐디로 경제적', '광릉수목원 관광 연계'],
+    cons: ['전화 예약만 가능', '노후화된 시설 일부', '카트비 5,000원/인 별도'],
     score: 76, highlight: false, membershipPrice: 190000000
   },
   {
